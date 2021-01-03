@@ -10,6 +10,7 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
       <link rel="shortcut icon" href="assets/img/perfil.png">
         <title>MY Portfolio</title>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -39,7 +40,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hello,<br>I'am <span class="home__title-color">Aritro</span><br> Web Designer</h1>
+                    <h1 class="home__title">Hello,<br>I'am <span class="home__title-color">Aritro</span><br> Web Developer</h1>
 
                     <a href="#" class="button">Resume</a>
                 </div>
@@ -214,7 +215,7 @@
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
                         <!-- <input type="button" value="Enviar" class="contact__button button"> -->
-                        <a href="submit.html" class="button">Submit</a>
+						<button onclick="popUp()" class="button">Submit</button>
                     </form>
                 </div>
             </section>
@@ -237,5 +238,22 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+		<script>
+	function popUp(){
+		swal({
+  			title: "Good job!",
+  			text: "You have successfully sent the message!", 
+  			icon: "success"
+		});
+	}
+
+	function popUp1(){
+		swal({
+  			title: "Good job!",
+  			text: "You have successfully verified your account!", 
+  			icon: "error"
+		});
+	}
+</script>
     </body>
 </html>
